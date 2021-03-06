@@ -31,10 +31,10 @@ stage('DeployAppIntoTomcatSerer')
  sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@13.229.224.120:/opt/apache-tomcat-9.0.41/webapps/"
 }
 }
-*/
 stage('SendEmailNotification')
 {
 mail body: 'build over', subject: 'build over', to: 'dk23606@gmail.com''
 }
+*/
 
 }
